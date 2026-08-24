@@ -1,103 +1,87 @@
-import { Link } from 'react-router-dom';
-
-export default function Home() {
+export default function Contact() {
   return (
-    <main className="home-page">
-      <section className="home-hero page-container">
-        <div className="home-intro">
-          <p className="home-greeting">
-            PORTFOLIO / 2026
-          </p>
+    <main className="contact-page">
+      <section className="contact-container page-container">
+        <div className="contact-header">
+          <p className="section-label">GET IN TOUCH</p>
 
           <h1>
-            Building ideas
-            <br />
-            <span>through code.</span>
+            Let's work
+            <span> together.</span>
           </h1>
 
-          <p className="home-description">
-            I'm Jancedric Nuqui, a Computer Science student
-            passionate about web development, programming,
-            and creating digital experiences.
-          </p>
-
-          <div className="home-actions">
-            <Link to="/projects" className="btn">
-              Explore My Work →
-            </Link>
-
-            <Link to="/about" className="home-text-link">
-              More About Me
-            </Link>
-          </div>
-        </div>
-
-        <div className="profile-panel">
-          <div className="profile-circle">
-            JN
-          </div>
-
-          <p className="profile-label">
-            COMPUTER SCIENCE
-          </p>
-
-          <h2>
-            Jancedric
-            <br />
-            Nuqui
-          </h2>
-
           <p>
-            Student Developer
+            Have a project idea, question, or just want to
+            say hello? Feel free to send me a message.
           </p>
+        </div>
 
-          <div className="availability">
-            <span></span>
-            Available for opportunities
+        <div className="contact-layout">
+          <div className="contact-info">
+            <div className="card contact-card">
+              <p className="card-number">CONTACT</p>
+
+              <h2>Let's talk.</h2>
+
+              <p>
+                I'm always open to learning opportunities,
+                project ideas, and meaningful conversations
+                about technology.
+              </p>
+
+              <div className="contact-details">
+                <div>
+                  <span>Email</span>
+                  <strong>nuquijancedric@gmail.com</strong>
+                </div>
+
+                <div>
+                  <span>Location</span>
+                  <strong>Philippines</strong>
+                </div>
+
+                <div>
+                  <span>Focus</span>
+                  <strong>Web Development</strong>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section className="home-stats page-container">
-        <div>
-          <strong>06</strong>
-          <span>Projects</span>
-        </div>
+          <form className="contact-form">
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
 
-        <div>
-          <strong>05+</strong>
-          <span>Technologies</span>
-        </div>
+              <input
+                id="name"
+                type="text"
+                placeholder="Your name"
+              />
+            </div>
 
-        <div>
-          <strong>CS</strong>
-          <span>Student</span>
-        </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
 
-        <div>
-          <strong>PH</strong>
-          <span>Based in</span>
-        </div>
-      </section>
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </div>
 
-      <section className="home-focus page-container">
-        <p className="section-label">CURRENT FOCUS</p>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
 
-        <div className="focus-content">
-          <h2>
-            Learning.
-            <br />
-            Building.
-            <br />
-            Improving.
-          </h2>
+              <textarea
+                id="message"
+                placeholder="Tell me about your project..."
+              />
+            </div>
 
-          <p>
-            I'm continuously developing my skills through
-            school projects and personal experiments. My goal
-            is to turn what I learn into practical and useful
-            applications.
-          </p>
+            <button type="submit">
+              Send Message →
+            </button>
+          </form>
         </div>
       </section>
     </main>
